@@ -1,1 +1,14 @@
-
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>维护中</title>
+    </head>
+    <body>
+		<body bgcolor="#333333">
+        <h1><p style="text-align:center;font-size:35px;color:#dddddd">温馨提示</p></h1>
+		<br>
+        <p style="text-align:center;font-size:28px;color:#bbbbbb">该页面正在维护中，暂时不对外开放，尽请谅解<br></p>
+		<p style="text-align:center;font-size:28px;color:#bbbbbb">点击<a href="http://192.168.1.2/"style="color:#ffffff">这里</a>返回主页或<a href="#"onclick="javascript:history.back(1);"style="color:#ffffff">返回上一级</a></p>
+    </body>
+</html>
