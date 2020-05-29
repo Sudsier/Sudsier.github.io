@@ -1,113 +1,104 @@
 /* 侧导航菜单 */
-
 .sidenav {
-
   height: 100%;
-
   /* 100%全高 */
-
   width: 0;
-
   /* 0宽度-用JavaScript更改 */
-
   position: fixed;
-
   /* Stay in place */
-
   z-index: 1;
-
   /* Stay on top */
-
   top: 0;
-
   /* Stay at the top */
-
   left: 0;
-
   background-color: #111;
-
   /* 黑色 */
-
   overflow-x: hidden;
-
   /* 禁用水平滚动 */
-
   padding-top: 60px;
-
   /* 从顶部放置内容60px */
-
   transition: 0.5s;
-
   /* 在侧导航中滑动的0.5秒 过渡效果 */
-
 }
-
 /* 导航菜单链接 */
-
 .sidenav a {
-
   padding: 8px 8px 8px 32px;
-
   text-decoration: none;
-
   font-size: 25px;
-
   color: #818181;
-
   display: block;
-
   transition: 0.3s;
-
 }
 
 /* 当鼠标移到导航链接上时，更改其颜色 */
-
 .sidenav a:hover {
-
   color: #f1f1f1;
-
 }
 
 /* 放置并设置“关闭”按钮的样式（右上角）*/
-
 .sidenav .closebtn {
-
   position: absolute;
-
   top: 0;
-
   right: 25px;
-
   font-size: 36px;
-
   margin-left: 50px;
-
 }
 
 /* 样式页面内容-如果要在打开侧导航时将页面内容推到右侧，请使用此选项 */
-
 #main {
-
   transition: margin-left .5s;
-
   padding: 20px;
-
 }
 
 /* 在高度小于450px的小屏幕上，更改侧导航的样式（更少的填充和更小的字体大小） */
-
 @media screen and (max-height: 450px) {
-
   .sidenav {
-
     padding-top: 15px;
-
   }
 
   .sidenav a {
-
     font-size: 18px;
-
   }
+}
 
+/*顶部导航条*/
+/* 向顶部导航添加黑色背景色 */
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+/* 设置导航栏内链接的样式 */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* 鼠标悬停时更改链接的颜色 */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* 向active/当前链接添加颜色 */
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+@media (max-width: 678px)
+{
+  .id_name{
+    display:none;
+  }
+}
+@media (min-width: 679px)
+{
+  .id_name2{
+    display:none;
+  }
 }
