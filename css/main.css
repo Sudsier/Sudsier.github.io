@@ -20,6 +20,7 @@
   transition: 0.5s;
   /* 在侧导航中滑动的0.5秒 过渡效果 */
 }
+
 /* 导航菜单链接 */
 .sidenav a {
   padding: 8px 8px 8px 32px;
@@ -90,15 +91,27 @@
   color: white;
 }
 
-@media (max-width: 678px)
-{
-  .id_name{
-    display:none;
+@media (max-width: 678px) {
+  .id_name {
+    display: none;
   }
 }
-@media (min-width: 679px)
-{
-  .id_name2{
-    display:none;
+
+@media (min-width: 679px) {
+  .id_name2 {
+    display: none;
   }
+}
+
+/*超链接颜色*/
+a:link {
+  color:#3AB2FF;
+}
+
+a:active {
+  color:#3087FF;
+}
+
+a:visited {
+  color:#005CDB;
 }
