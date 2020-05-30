@@ -105,13 +105,17 @@
 
 /*超链接颜色*/
 .chaolianjie a:link {
-  color:#3AB2FF;
-}
-
-.chaolianjie a:active {
-  color:#3087FF;
+  color: #3AB2FF;
 }
 
 .chaolianjie a:visited {
-  color:#005CDB;
+  color: #005CDB;
+}
+
+.chaolianjie a:hover {
+  color: #3087FF;
+}
+
+.chaolianjie a:active {
+  color: #3087FF;
 }
