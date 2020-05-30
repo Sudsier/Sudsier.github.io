@@ -104,14 +104,14 @@
 }
 
 /*超链接颜色*/
-.a:link {
+.chaolianjie a:linkl {
   color:#3AB2FF;
 }
 
-.a:active {
+.chaolianjie a:active {
   color:#3087FF;
 }
 
-.a:visited {
+.chaolianjie a:visited {
   color:#005CDB;
 }
