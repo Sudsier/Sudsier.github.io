@@ -1,0 +1,43 @@
+/* 设置用于打开和关闭手风琴面板的按钮的样式 */
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 15px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  font-size: 17px;
+  transition: 0.4s;
+}
+
+/* 如果单击按钮（添加带有JS的.active类），并将鼠标移到按钮上（悬停），则向按钮添加背景色 */
+.active,
+.accordion:hover {
+  background-color: #ccc;
+}
+
+.accordion:after {
+  content: '\002B';
+  /* “加号（＋）”的Unicode字符 */
+  font-weight: bold;
+  font-size: 19px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+  /* “减号（－）”符号的Unicode字符 */
+}
+
+/* 设计手风琴面板。注意：默认情况下隐藏 */
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
