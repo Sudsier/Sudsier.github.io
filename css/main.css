@@ -67,6 +67,7 @@
 .topnav {
   background-color: #333;
   overflow: hidden;
+  margin: 0;
 }
 
 /* 设置导航栏内链接的样式 */
@@ -105,17 +106,28 @@
 
 /*超链接颜色*/
 .chaolianjie a:link {
-  color: #3AB2FF;
+  color: #2985FF;
 }
 
 .chaolianjie a:visited {
-  color: #aaaaaa;
+  color: #0A52FF;
 }
 
 .chaolianjie a:hover {
-  color: #3087FF;
+  color: #0A52FF;
 }
 
 .chaolianjie a:active {
-  color: #3087FF;
+  color: #0A52FF;
+}
+
+
+.smalltitle {
+  font-size: 17px;
+  color: #A4A4A4;
+}
+
+.title {
+  font-size: 30px;
+  font-weight: bold;
 }
