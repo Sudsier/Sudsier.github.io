@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title></title>
+    <title>Sudsier | 文档</title>
     <!--网页大小自适应-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes">
     <!--title旁的logo-->
     <link rel="shortcut icon" href="/favicon.png" type="image/x-icon" media="screen" />
     <!--调用main.css-->
-    <link rel="stylesheet" type="text/css" href="/css/main.css" />
+    <link rel="stylesheet" type="text/css" href="/个人网站存储库/css/main.css" />
     <!--调用fold.css-->
-    <link rel="stylesheet" type="text/css" href="/css/fold.css" />
+    <link rel="stylesheet" type="text/css" href="/个人网站存储库/css/fold.css" />
     <style>
+    body {
+      margin:0px;
+      padding:0px;
+    }
     .chaolianjie {
       font-size:20px;
     }
@@ -34,7 +37,7 @@
       <a href="#">Clients</a>
       <a href="#">Contact</a>
     </div>
-    <div style="margin:0;background-color:#003379;">
+    <div style="background-color:#111111;">
     <span style="font-size:30px;color:#4CAF50;cursor:pointer" onclick="openNav()">&#9776;</span>
     </div>
   </div>
@@ -48,7 +51,9 @@
   </div>
   <button class="accordion">法律法规</button>
   <div class="panel">
-    <p>Lorem ipsum...</p>
+    <div class="chaolianjie">
+      1、<a href="5.html">中华人民共和国民法典</a><br>
+    </div>
   </div>
   <button class="accordion">时政新闻/历史事件</button>
   <div class="panel">
@@ -63,6 +68,10 @@
   <div class="panel">
     <p>Lorem ipsum...</p>
   </div>
+  <br><br>
+  <div style="background-color:#111111;height:70px;color:#EEEEEE;">
+    　 <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="知识共享许可协议" style="border-width:0" src="https://licensebuttons.net/l/by-nc-nd/4.0/80x15.png" /></a>本网站内容采用<a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/" style="color:#aaaaaa;">CC BY-NC-ND 4.0 国际许可协议</a>授权。特殊声明请<a href="/doc/license.html" style="color:#AAAAAA;">见此</a>。
+    　</div>
   <script>
     /* 将侧导航的宽度设置为250px，页面内容的左边距设置为250px，并在正文中添加黑色背景色 */
     function openNav() {
@@ -76,7 +85,5 @@
     var i;
     for (i = 0; i < acc.length; i++) { acc[i].addEventListener("click", function() { /* 在添加和删除“active”类之间切换，突出显示控制面板的按钮 */ this.classList.toggle("active"); /* 在隐藏和显示active面板之间切换 */ var panel=this.nextElementSibling; if (panel.style.maxHeight) { panel.style.maxHeight=null; } else { panel.style.maxHeight=panel.scrollHeight + "px" ; } }); }
   </script>
-
 </body>
-
 </html>
