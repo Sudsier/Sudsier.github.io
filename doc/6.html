@@ -26,7 +26,6 @@
     }
   </style>
 </head>
-
 <body>
   <!--导航条-->
   <div class="id_name2">
@@ -53,8 +52,8 @@
     <h1>距离地理生物初中学业水平考试还有：</h1>
     <!-- 在元素中显示倒计时计时器 -->
     <p id="demo"></p>
-    <h1>距离初中学业水平考试还有：</h1>
-    <p>暂无数据</p>
+    <h1>距离内江市2019–2020学年度第二学期期末考试还有：</h1>
+    <p id="demo2"></p>
   </div>
   <div style="background-color:#111111;height:70px;color:#EEEEEE;font-size:17px;">
     　 <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="知识共享许可协议" style="border-width:0" src="https://licensebuttons.net/l/by-nc-nd/4.0/80x15.png" /></a>本网站内容采用<a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/" style="color:#aaaaaa;">CC BY-NC-ND 4.0 国际许可协议</a>授权。特殊声明请<a href="/doc/license.html" style="color:#AAAAAA;">见此</a>。
@@ -92,10 +91,35 @@
         minutes + "分 " + seconds + "秒 ";
   
       // 如果倒计时结束，提示文字
-      if (distance < 0) {
+      if (distance < 0 && distance > -7199999) {
         clearInterval(x);
-        document.getElementById("demo").innerHTML = "EXPIRED";
+        document.getElementById("demo").innerHTML = "考试进行中";
+      }else {
+        if (distance < -7200000) { document.getElementById("demo").innerHTML="已经结束" ;
+        }
       }
+    }, 1000);
+    
+    // 设定我们倒计时的日期
+    var countDownDate2 = new Date("July 15, 2020 8:30:00").getTime();
+    // 每1秒更新倒计时
+    var x = setInterval(function() {
+    // 获取今天的日期和时间
+    var now = new Date().getTime();
+    // 计算出从现在到倒计时日期之间的时间距离
+    var distance2 = countDownDate2 - now;
+    // 天、小时、分钟和秒的时间计算
+    var days2 = Math.floor(distance2 / (1000 * 60 * 60 * 24));
+    var hours2 = Math.floor((distance2 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes2 = Math.floor((distance2 % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds2 = Math.floor((distance2 % (1000 * 60)) / 1000);
+    // 在id为“demo”的元素中输出结果
+    document.getElementById("demo2").innerHTML = days2 + "天 " + hours2 + "时 " +
+    minutes2 + "分 " + seconds2 + "秒 ";
+    // 如果倒计时结束，提示文字
+    if (distance2 < 0) { clearInterval(x); document.getElementById("demo2").innerHTML="已经结束" ; 
+      } 
+
     }, 1000);
   </script>
 </body>
