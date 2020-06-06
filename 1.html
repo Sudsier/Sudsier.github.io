@@ -1,26 +1,22 @@
-<!DOCTYPE html>
-  <head>
-    <meta charset="utf-8">
-    <title>百度地图API</title>
-    <script type="text/javascript" src="http://api.map.baidu.com/api?key=MxOpexU9fLX3KUUawAQvlRSss458dWkk&v=3.0&services=true"></script>
-  </head>
-  <body>
-    <!--百度地图容器-->
-      <div style="width:697px;height:550px;border:#ccc solid 1px;" id="dituContent"></div>
-  </body>
-  <script type="text/javascript">
-    //创建和初始化地图函数：
-    function initMap() {
-      createMap(); //创建地图
-      setMapEvent(); //设置地图事件
-      addMapControl(); //向地图添加控件
-    }
-  
-    //创建地图函数：
-    function createMap() {
-      var map = new BMap.Map("dituContent"); //在百度地图容器中创建一个地图
-      var point = new BMap.Point(104.081592, 30.655831); //定义一个中心点坐标
-      map.centerAndZoom(point, 12); //设定地图的中心点和坐标并将地图显示在地图容器中
-      window.map = map; //将map变量存储在全局</script>
-</body>
-</html>
+<!DOCTYPE html>  
+<html>  
+<head>  
+<meta charset="utf-8"/>  
+<title>异步加载</title>  
+<script type="text/javascript">  
+function initialize() {  
+  var mp = new BMap.Map('map');  
+  mp.centerAndZoom(new BMap.Point(121.491, 31.233), 11);  
+}  
+   
+function loadScript() {  
+  var script = document.createElement("script");  
+  script.src = "http://api.map.baidu.com/api?v=2.0&ak=MxOpexU9fLX3KUUawAQvlRSss458dWkk&callback=initialize";
+  document.body.appendChild(script);  
+}  
+   
+window.onload = loadScript;  
+</script>  
+</head>  
+<body></body>  
+</html> 
