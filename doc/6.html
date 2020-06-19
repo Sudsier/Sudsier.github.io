@@ -92,7 +92,6 @@
   
       // 如果倒计时结束，提示文字
       if (distance < 0 && distance > -7199999) {
-        clearInterval(x);
         document.getElementById("demo").innerHTML = "考试进行中";
       }else {
         if (distance < -7200000) { document.getElementById("demo").innerHTML="已经结束" ;
@@ -101,7 +100,7 @@
     }, 1000);
     
     // 设定我们倒计时的日期
-    var countDownDate2 = new Date("July 15, 2020 8:30:00").getTime();
+    var countDownDate2 = new Date("July 16, 2020 8:30:00").getTime();
     // 每1秒更新倒计时
     var x = setInterval(function() {
     // 获取今天的日期和时间
@@ -117,9 +116,14 @@
     document.getElementById("demo2").innerHTML = days2 + "天 " + hours2 + "时 " +
     minutes2 + "分 " + seconds2 + "秒 ";
     // 如果倒计时结束，提示文字
-    if (distance2 < 0) { clearInterval(x); document.getElementById("demo2").innerHTML="已经结束" ; 
-      } 
-
+    if (distance2 < 0 && distance2 > -179999999) {
+        document.getElementById("demo").innerHTML = "考试进行中";
+      }else {
+        if (distance2 < -180000000) { 
+clearInterval(x);
+document.getElementById("demo").innerHTML="已经结束" ;
+        }
+      }
     }, 1000);
   </script>
 </body>
