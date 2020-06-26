@@ -22,45 +22,42 @@
       -moz-border-radius: 25px;
       /* 老的 Firefox */
     }
-
     body {
-      margin: 0;
+      background-color:#e7f8ff;
+      margin:0px;
+      padding:0px;
       font-family: Arial, Helvetica, sans-serif;
     }
-
     .active {
       background-color: #4CAF50;
     }
-
     .nr {
       margin-left: 10px;
       margin-right: 10px;
       margin-top: 0;
     }
-
-    @media (max-width: 678px) {
-      .id_name {
-        display: none;
-      }
-    }
   </style>
 </head>
-
-<body background-color="#fafafa">
+<body>
   <!--导航条-->
   <div class="id_name2">
     <div id="mySidenav" class="sidenav">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-      <a href="#home">首页</a>
-      <a href="/doc">文档</a>
+      <a href="/">首页</a>
+      <a href="#">文档</a>
       <a href="#">Clients</a>
       <a href="#">Contact</a>
     </div>
-    <span style="font-size:30px;color:#4CAF50;cursor:pointer" onclick="openNav()">&#9776;</span>
+    <div style="background-color:#111111;height:50px;">
+      <span style="font-size:30px;color:#4CAF50;position:relative;left:10px;top:5px;cursor:pointer" onclick="openNav()">&#9776;</span>
+      <a href="/"><img src="https://s1.ax1x.com/2020/06/25/NDiHYD.md.png" width="200px" style="position:absolute;left:80px"></a>
+    </div>
   </div>
   <div class="id_name">
+    <div style="background-color:#333;text-align:center">
+      <img src="https://s1.ax1x.com/2020/06/25/NDiHYD.md.png" width="200px"></div>
     <div class="topnav">
-      <a class="active" href="#home">首页</a>
+      <a class="active" href="/">首页</a>
       <a href="/doc">文档</a>
       <a href="#contact">Contact</a>
       <a href="#about">About</a>
@@ -73,16 +70,17 @@
     </p>
   </div>
   <hr>
-  <h1>
-    <p style="text-align:center;font-size:30px;color:#333333">Sudsier的个人主页</p>
-  </h1>
-  <hr>
   <p style="text-align:center;font-size:20px;">本页面正在创建中，您可以<a href="https://github.com/Sudsier/Sudsier.github.io/blob/master/index.html">帮助此页面的创建</a>。</p>
   </div>
 </p>
 </div>
-<div style="background-color:#111111;height:70px;color:#EEEEEE;">
-<a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/80x15.png" /></a>本网站内容采用<a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"style="color:#aaaaaa;">CC BY-NC-ND 4.0 国际许可协议</a>授权。特殊声明请<a href="/doc/license.html"style="color:#AAAAAA;">见此</a>。
+<div style="background-color:#333333;color:#EEEEEE;font-size:17px;">
+  <br><br>
+  <div style="font-size:30px;color:#fafafa">Sudsier</div>
+  <hr style="background-color:#fafafa;height:1px;border:none;">
+  <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="知识共享许可协议" style="border-width:0" src="https://licensebuttons.net/l/by-nc-nd/4.0/80x15.png" /></a>除非另有声明，本网站内容采用<a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/" style="color:#b1b1b1;text-decoration:none;">CC BY-NC-ND 4.0 国际许可协议</a>授权。
+  <br><br>
+  <div style="text-align:center;font-size:20px;background-color:#111111"><br>Copyright©2020-<a id="copyright"></a> Sudsier<br>sudsier.github.io<br><br></div>
 </div>
   <script>
     /* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
@@ -93,7 +91,9 @@
     function closeNav() {
       document.getElementById("mySidenav").style.width = "0";
     }
+    //版权年份
+    var d = new Date();
+    document.getElementById("copyright").innerHTML = d.getFullYear();
   </script>
 </body>
-
 </html>
