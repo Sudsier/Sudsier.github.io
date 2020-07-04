@@ -1,0 +1,11 @@
+.box {
+  border: 2px solid #eeeeee;
+  padding: 10px 8px;
+  background: #fefefe;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 15px;
+  border-radius: 5px;
+  -moz-border-radius: 7px;
+  /* 老的 Firefox */
+}
