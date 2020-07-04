@@ -127,6 +127,22 @@ body {
   color: #0A52FF;
 }
 
+a[href^="//music.163.com/"]:link {
+  color: #FF2B00;
+}
+a[href^="//music.163.com/"]:visited {
+  color: #BD261A;
+}
+a[href^="//music.163.com/"]:hover {
+  color: #BD261A;
+}
+a[href^="//music.163.com/"]:active {
+  color: #BD261A;
+}
+
+a {
+  text-decoration:none
+}
 .title {
   font-size: 30px;
   font-weight: bold;
