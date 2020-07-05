@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Sudsier | Into The Sun-Liquid Cinema - 音频播放</title>
+  <!--网页大小自适应-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes">
+  <!--title旁的logo-->
+  <link rel="shortcut icon" href="/favicon.png" type="image/x-icon" media="screen" />
+  <!--调用main.css-->
+  <link rel="stylesheet" type="text/css" href="/css/main.css" />
+  <link rel="stylesheet" type="text/css" href="/css/box.css" />
+</head>
+
+<body>
+  <!--导航条-->
+  <div class="id_name2">
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="/">首页</a>
+      <a href="/doc">文档</a>
+      <a href="/music">音乐</a>
+      <a href="#">Contact</a>
+    </div>
+    <div style="background-color:#111111;height:50px;">
+      <span style="font-size:30px;color:#4CAF50;position:relative;left:10px;top:5px;cursor:pointer" onclick="openNav()">&#9776;</span>
+      <a href="/"><img src="https://s1.ax1x.com/2020/06/25/NDiHYD.md.png" width="200px" style="position:absolute;left:80px"></a>
+    </div>
+  </div>
+  <div class="id_name">
+    <div style="background-color:#333;text-align:center">
+      <img src="https://s1.ax1x.com/2020/06/25/NDiHYD.md.png" width="200px"></div>
+    <div class="topnav">
+      <a class="active" href="/">首页</a>
+      <a href="/doc">文档</a>
+      <a href="/music">音乐</a>
+      <a href="#about">About</a>
+    </div>
+  </div>
+  <div style="margin-left:10px;margin-right:10px;margin-top:20px;margin-bottom:30px;">
+    <div style="font-size:20px">&emsp;&emsp;如果发现播放异常情况，请您及时<a href="mailto:feedbackongithub@163.com?subject=Sudsier | 音频播放问题反馈&body=问题描述（可适当添加附件）：">联系我们</a></div>
+    <div class="box">
+      <div style="width:315px">
+        <img src="http://p2.music.126.net/oc_p98jXIWPLjVAS-y-7kQ==/3421680187176215.jpg" style="width:315px">
+        <audio controls>
+          <source src="//music.163.com/song/media/outer/url?id=32477986.mp3">
+        </audio>
+      </div>
+      <div style="font-size:20px;"><b>音频数据</b><br>
+        歌曲名：Into The Sun<br>
+        作者：Liquid Cinema<br>
+        时长：02:44<br>
+        接入点：网易云音乐<br>
+        ID：32477986<br>
+        原始链接：<a href="//music.163.com/#/song?id=32477986" style="word-wrap:break-word">https://music.163.com/#/song?id=32477986</a>(来自@网易云音乐)
+      </div>
+    </div>
+  </div>
+  <!-- footer -->
+  <div>
+    <div class="footer_1">
+      <div style="font-size:30px;color:#fafafa">Sudsier</div>
+      <hr style="background-color:#fafafa;height:1px;border:none;">
+      <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="知识共享许可协议" style="border-width:0" src="https://licensebuttons.net/l/by-nc-nd/4.0/80x15.png" /></a>除非另有声明，本网站内容采用<a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/" style="color:#b1b1b1;text-decoration:none;">CC BY-NC-ND 4.0 国际许可协议</a>授权。
+    </div>
+    <div class="footer_2">Copyright©2020-<a id="copyright"></a> Sudsier<br>sudsier.github.io</div>
+  </div>
+  <script>
+    /* 将侧导航的宽度设置为250px，页面内容的左边距设置为250px，并在正文中添加黑色背景色 */
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+    }
+    /* 将侧导航的宽度设置为0，将页面内容的左边距设置为0，将正文的背景色设置为白色 */
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+    /* 版权年份 */
+    var y = new Date();
+    document.getElementById("copyright").innerHTML = y.getFullYear();
+  </script>
+</body>
+</html>
