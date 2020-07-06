@@ -3,6 +3,12 @@ body {
   margin: 0px;
   padding: 0px;
 }
+.frame {
+  margin-left:20px;
+  margin-right:20px;
+  margin-top:20px;
+  margin-bottom:30px;
+}
 /* 侧导航菜单 */
 .sidenav {
   height: 100%;
@@ -138,6 +144,19 @@ a[href^="//music.163.com/"]:hover {
 }
 a[href^="//music.163.com/"]:active {
   color: #BD261A;
+}
+
+a[href^="//sudsier.github.io"]:link {
+  color: #008FFF;
+}
+a[href^="//sudsier.github.io"]:visited {
+  color: #0073CC;
+}
+a[href^="//sudsier.github.io"]:hover {
+  color: #0073CC;
+}
+a[href^="//sudsier.github.io"]:active {
+  color: #0073CC;
 }
 
 a {
