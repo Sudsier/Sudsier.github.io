@@ -56,37 +56,14 @@
       /* 使其成为块元素以填充整个列表 */
     }
     #myUL li a:hover:not(.header) {
-      background-color: #bff1a0;
+      background-color: #ff8700;
       /* 向所有链接添加悬停效果，除了标题 */
     }
   </style>
 </head>
 <body>
-  <!--导航条-->
-  <div class="id_name">
-    <div style="background-color:#333;text-align:center">
-      <img src="https://s1.ax1x.com/2020/06/25/NDiHYD.md.png" width="200px"></div>
-    <div class="topnav">
-      <a class="active" href="/">首页</a>
-      <a href="/doc">文档</a>
-      <a href="/music">音乐</a>
-      <a href="#about">About</a>
-    </div>
-  </div>
-  <div class="id_name2">
-    <div id="mySidenav" class="sidenav">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-      <a href="/">首页</a>
-      <a href="/doc">文档</a>
-      <a href="/music">音乐</a>
-      <a href="#">Contact</a>
-    </div>
-    <div style="background-color:#111111;height:50px;">
-      <span style="font-size:30px;color:#4CAF50;position:relative;left:10px;top:5px;cursor:pointer" onclick="openNav()">&#9776;</span>
-      <a href="/"><img src="https://s1.ax1x.com/2020/06/25/NDiHYD.md.png" width="200px" style="position:absolute;left:80px"></a>
-    </div>
-  </div>
-  <div style="margin-left:20px;margin-right:20px;margin-top:20px;margin-bottom:30px;">
+  <script src="/js/navigation.js"></script>
+  <div class="frame">
     <input type="text" id="myInput" onkeyup="myFunction()" placeholder="搜索歌曲或作者">
     <ul id="myUL">
       <li><a href="#">Acreix - Visions.mp3</a></li>
@@ -96,18 +73,11 @@
       <li><a href="4441179.html">Freefight - X-Ray Dog</a></li>
       <li><a href="4441177.html">Heartbeat of Man - X-Ray Dog</a></li>
       <li><a href="32477986.html">Into The Sun - Liquid Cinema</a></li>
+      <li><a href="">Rise - Epic Music - John Dreamer</a><li>
       <li><a href="1311346278.html">世纪的约定 - 柠檬茶演唱组</a></li>
     </ul>
   </div>
-  <!-- footer -->
-  <div>
-    <div class="footer_1">
-      <div style="font-size:30px;color:#fafafa">Sudsier</div>
-      <hr style="background-color:#fafafa;height:1px;border:none;">
-      <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="知识共享许可协议" style="border-width:0" src="https://licensebuttons.net/l/by-nc-nd/4.0/80x15.png" /></a>除非另有声明，本网站内容采用<a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/" style="color:#b1b1b1;text-decoration:none;">CC BY-NC-ND 4.0 国际许可协议</a>授权。
-    </div>
-    <div class="footer_2">Copyright©2020-<a id="copyright"></a> Sudsier<br>sudsier.github.io</div>
-  </div>
+  <script src="/js/footer.js"></script>
   <script>
     /* 将侧导航的宽度设置为250px，页面内容的左边距设置为250px，并在正文中添加黑色背景色 */
     function openNav() {
