@@ -8,7 +8,7 @@ document.write("      <a href=\"\/music\">音乐<\/a>");
 document.write("      <a href=\"#\">Contact<\/a>");
 document.write("    <\/div>");
 document.write("    <div style=\"background-color:#111111;height:64px;\">");
-document.write("      <span style=\"font-size:30px;color:#4CAF50;position:relative;left:18px;top:11px;cursor:pointer\" onclick=\"openNav()\">&#9776;<\/span>");
+document.write("      <span style=\"font-size:30px;color:#4CAF50;position:relative;left:18px;top:12px;cursor:pointer\" onclick=\"openNav()\">&#9776;<\/span>");
 document.write("      <a href=\"\/\"><img src=\"https:\/\/sudsier.gitee.io\/webimg\/icon.png\" width=\"200px\" style=\"position:absolute;left:92px;top:10px\"><\/a>");
 document.write("    <\/div>");
 document.write("  <\/div>");
