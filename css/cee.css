@@ -1,6 +1,28 @@
 p {
   font-size: 18px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
-h1 {
-  font-size: 25px;
+.s-panel {
+  padding: 0.01em 16px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+.s-leftbar {
+  border-left: 6px solid #ccc !important
+}
+.s-pale-blue,
+.s-hover-pale-blue:hover {
+  color: #000 !important;
+  background-color: #ddffff !important
+}
+.s-border-blue,
+.s-hover-border-blue:hover {
+  border-color: #2196F3 !important
+}
+a {
+  font-size: 20px;
+  color: #008FFF;
+  line-height: 30px;
 }
