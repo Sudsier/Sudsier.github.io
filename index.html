@@ -14,7 +14,7 @@
   <!--title旁的logo-->
   <link rel="shortcut icon" href="/favicon.png" type="image/x-icon" media="screen" />
   <!--调用main.css-->
-  <link rel="stylesheet" type="text/css" href="css/main.css" />
+  <link rel="stylesheet" type="text/css" href="/css/main.css" />
   <style>
     .box {
       border:2px solid #eeeeee;
@@ -23,74 +23,34 @@
       border-radius:5px;
       -moz-border-radius:7px; /* 老的 Firefox */
     }
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-    }
-    .active {
-      background-color: #4CAF50;
+    .sbox {
+      margin-top: 15px;
+      padding: 10px 10px;
+      background-color: #FF9564;
     }
   </style>
 </head>
 <body>
-  <!--导航条-->
-  <div class="id_name2">
-    <div id="mySidenav" class="sidenav">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-      <a href="/">首页</a>
-      <a href="#">文档</a>
-      <a href="#">Clients</a>
-      <a href="#">Contact</a>
+  <script src="/js/navigation.js"></script>
+  <div class="frame">
+    <div class="box">
+      <div class="img" style="height: 150px;">
+        <img src="//sudsier.gitee.io/webimg/headimg.png" style="height: 150px;" alt="headimg.png">
+      </div>
+      <div style="text-indent: 2em;">欢迎来到Sudsier（苏德西尔）的个人网站，本网站是一个综合性的网站，点击左上角的侧边栏导航条或顶部的导航条可快速到达您想看的内容哦~
+      </div>
     </div>
-    <div style="background-color:#111111;height:50px;">
-      <span style="font-size:30px;color:#4CAF50;position:relative;left:10px;top:5px;cursor:pointer" onclick="openNav()">&#9776;</span>
-      <a href="/"><img src="https://s1.ax1x.com/2020/06/25/NDiHYD.md.png" width="200px" style="position:absolute;left:80px"></a>
+    <div class="sbox">
+      <div style="font-size: 30px"><a href="/doc" style="color: #111">文档</a></div>
+      <a style="color: #333">&emsp;&emsp;这是一个综合性的内容页面。文档页目前分为“法律文件”和“时政新闻”两部分。<br>&emsp;&emsp;由于某些原因，该页面长时间未更新，因此页面看起来会有些奇怪，我们会尽快更新。</a>
+      <hr style="background-color:#111;height:1px;border:none;">
+      <div style="font-size: 30px"><a href="/vcip.html" style="color: #111">视频在版编目</a></div>
+      <a style="color: #333">&emsp;&emsp;这里列出了Sudsier发布在bilibili上的所有视频的相关信息。</a>
     </div>
+    <hr>
+    <p style="text-align:center;font-size:20px;">本页面正在创建中</p>
   </div>
-  <div class="id_name">
-    <div style="background-color:#333;text-align:center">
-      <img src="https://s1.ax1x.com/2020/06/25/NDiHYD.md.png" width="200px"></div>
-    <div class="topnav">
-      <a class="active" href="/">首页</a>
-      <a href="/doc">文档</a>
-      <a href="#contact">Contact</a>
-      <a href="#about">About</a>
-    </div>
-  </div>
-  <div style="margin-left:20px;margin-right:20px;margin-top:20px;margin-bottom:30px;">
-  <div class="chaolianjie">
-  <div class="box">
-    <h2>广告推广：</h2>
-    <p style="font-size:20px">&emsp;&emsp;因维护本网站内容急需资金，现引进“广告推广”项目。目前在本网站推广广告<b>只需2元/月起</b>。请自备广告推广图片及链接，图片大小不超过1920×1080，最好为正方形。有意向者请联系电邮<a href="mailto:feedbackongithub@163.com">feedbackongithub@163.com</a>
-    </p>
-  </div>
-  <hr>
-  <p style="text-align:center;font-size:20px;">本页面正在创建中，您可以<a href="https://github.com/Sudsier/Sudsier.github.io/blob/master/index.html">帮助此页面的创建</a>。</p>
-  </div>
-</p>
-</div>
-</div>
-<!-- footer -->
-<div>
-  <div class="footer_1">
-    <div style="font-size:30px;color:#fafafa">Sudsier</div>
-    <hr style="background-color:#fafafa;height:1px;border:none;">
-    <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="知识共享许可协议" style="border-width:0" src="https://licensebuttons.net/l/by-nc-nd/4.0/80x15.png" /></a>除非另有声明，本网站内容采用<a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/" style="color:#b1b1b1;text-decoration:none;">CC BY-NC-ND 4.0 国际许可协议</a>授权。
-  </div>
-  <div class="footer_2">Copyright©2020-<a id="copyright"></a> Sudsier<br>sudsier.github.io</div>
-</div>
-<script data-ad-client="ca-pub-7993350012789521" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-  <script>
-    /* 将侧导航的宽度设置为250px，页面内容的左边距设置为250px，并在正文中添加黑色背景色 */
-    function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
-    }
-    /* 将侧导航的宽度设置为0，将页面内容的左边距设置为0，将正文的背景色设置为白色 */
-    function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-    }
-    //版权年份
-    var d = new Date();
-    document.getElementById("copyright").innerHTML = d.getFullYear();
-  </script>
+  <script src="/js/footer.js"></script>
+  <script data-ad-client="ca-pub-7993350012789521" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 </body>
 </html>
