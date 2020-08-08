@@ -28,3 +28,7 @@ function openNav() {
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
 }
+function s_language(targ, selObj, restore) {
+  eval(targ + ".location='" + selObj.options[selObj.selectedIndex].value + "'");
+  if (restore) selObj.selectedIndex = 0;
+}
