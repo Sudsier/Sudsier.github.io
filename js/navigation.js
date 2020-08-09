@@ -5,7 +5,7 @@ document.write("      <a href=\"javascript:void(0)\" class=\"closebtn\" onclick=
 document.write("      <a href=\"\/\">首页<\/a>");
 document.write("      <a href=\"\/doc\">文档<\/a>");
 document.write("      <a href=\"\/music\">音乐<\/a>");
-document.write("      <a href=\"#\">#<\/a>");
+document.write("      <a href=\"#\">关于<\/a>");
 document.write("    <\/div>");
 document.write("    <div style=\"background-color:#202020;height:64px;\">");
 document.write("      <span style=\"font-size:30px;color:#4CAF50;position:relative;left:18px;top:11px;cursor:pointer\" onclick=\"openNav()\">&#9776;<\/span>");
@@ -19,8 +19,14 @@ document.write("    <div class=\"topnav\">");
 document.write("      <a class=\"active\" href=\"\/\">首页<\/a>");
 document.write("      <a href=\"\/doc\">文档<\/a>");
 document.write("      <a href=\"\/music\">音乐<\/a>");
-document.write("      <a href=\"#about\">#<\/a>");
+document.write("      <a href=\"#about\">关于<\/a>");
 document.write("    <\/div>");
+document.write("<\/div>");
+document.write("<div class=\"frame\">")
+document.write("  <img src=\"\/\/sudsier.gitee.io\/webimg\/language_icon.png\" height=\"40px\" style=\"vertical-align:middle;\" alt=\"icon.png\">本网页有以下几种语言版本：<select name=\"language\" id=\"language\" onchange=\"s_language('parent',this,0)\">");
+document.write("      <option value=\"index.html\" selected>简体中文<\/option>");
+document.write("      <option value=\"en.html\">English<\/option> ");
+document.write("    <\/select>");
 document.write("<\/div>");
 /* 将侧导航的宽度设置为250px，页面内容的左边距设置为250px，并在正文中添加黑色背景色 */
 function openNav() {

@@ -20,6 +20,12 @@ document.write("      <a href=\"\/doc\">File<\/a>");
 document.write("      <a href=\"\/music\">Music<\/a>");
 document.write("    <\/div>");
 document.write("<\/div>");
+document.write("<div class=\"frame\">")
+document.write("  <img src=\"\/\/sudsier.gitee.io\/webimg\/language_icon.png\" height=\"40px\" style=\"vertical-align:middle;\" alt=\"icon.png\">This website is available in the following languages:<select name=\"language\" id=\"language\" onchange=\"s_language('parent',this,0)\">");
+document.write("      <option value=\"index.html\">简体中文<\/option>");
+document.write("      <option value=\"en.html\" selected>English<\/option> ");
+document.write("    <\/select>");
+document.write("<\/div>");
 /* 将侧导航的宽度设置为250px，页面内容的左边距设置为250px，并在正文中添加黑色背景色 */
 function openNav() {
   document.getElementById("mySidenav").style.width = "250px";
