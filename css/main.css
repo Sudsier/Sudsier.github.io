@@ -1,5 +1,5 @@
 body {
-  background-color: #e7f8ff;
+  background-color: #FF9685;
   margin: 0px;
   padding: 0px;
 }
@@ -51,7 +51,7 @@ select {
   top: 0;
   /* Stay at the top */
   left: 0;
-  background-color: #111;
+  background-color: #FF9180;
   /* 黑色 */
   overflow-x: hidden;
   /* 禁用水平滚动 */
@@ -99,7 +99,7 @@ select {
 /*顶部导航条*/
 /* 向顶部导航添加黑色背景色 */
 .topnav {
-  background-color: #202020;
+  background-color: #FF9180;
   overflow: hidden;
   margin: 0;
 }
@@ -138,48 +138,10 @@ select {
     text-align: center;
   }
 }
-.dropbtn {
-  background-color: #3498DB;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
-}
-
-.dropbtn:hover, .dropbtn:focus {
-  background-color: #2980B9;
-}
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  overflow: auto;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-.dropdown a:hover {background-color: #ddd;}
-
-.show {display: block;}
 
 .footer_1 {
   padding: 50px 0 20px 0;
-  background-color:#353535;
+  background-color:#FF9180;
   color:#EEEEEE;
   font-size:17px;
 }
