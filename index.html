@@ -6,7 +6,7 @@
   <!--搜索引擎识别代码-->
   <meta name="sogou_site_verification" content="oX2aZK2vEs"/>
   <meta name="google-site-verification" content="Z9iqPgdBeigTbJYJPYb4GxNGT2hchyrAMExFHicwVQg" />
-  <title>Sudsier的个人主页</title>
+  <title>Sudsier个人主页 | 七夕特别版</title>
   <!--网页大小自适应-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes">
   <!--title旁的logo-->
@@ -15,22 +15,61 @@
   <link rel="stylesheet" type="text/css" href="/css/main.css" />
   <style>
     .box {
-      border:2px solid #eeeeee;
+      border:2px solid #FF6750;
       padding:10px 8px;
-      background:#fefefe;
+      background:rgba(0, 0, 0, 0);
       border-radius:5px;
       -moz-border-radius:7px; /* 老的 Firefox */
     }
     .sbox {
       margin-top: 15px;
       padding: 10px 10px;
-      background-color: #FF9564;
+      background-color: rgba(0, 0, 0, 0);
     }
   </style>
+  <script>
+    document.onreadystatechange = function() {
+      if (document.readyState == "complete") {
+        document.body.style.display = "block";
+      } else {
+        document.body.style.display = "none";
+      };
+    };
+    // 设定我们倒计时的日期
+    var countDownDate = new Date("8 25, 2020 00:00:00").getTime();
+    // 每1秒更新倒计时
+    var x = setInterval(function() {
+      // 获取今天的日期和时间
+      var now = new Date().getTime();
+      // 计算出从现在到倒计时日期之间的时间距离
+      var distance = countDownDate - now;
+      // 天、小时、分钟和秒的时间计算
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+      // 输出
+      document.getElementById("d").innerHTML = days;
+      document.getElementById("h").innerHTML = hours;
+      document.getElementById("m").innerHTML = minutes;
+      document.getElementById("s").innerHTML = seconds;
+      // 如果倒计时结束，提示文字
+      if (distance <= 0) {
+        clearInterval(x);
+        document.getElementById("qixi").innerHTML = "去寻找你的另一半吧！";
+      }
+    }, 1000);
+  </script>
 </head>
 <body>
   <script src="/js/navigation.js"></script>
   <div class="frame">
+    <div style="color: #FFFFFF;margin-bottom: 20px">
+      <div style="font-size: 40px">七夕节</div>
+      <div style="font-size: 22px">
+        <a style="font-size: 14px">倒计时 </a><a id="d"></a><a style="font-size: 14px"> 天 </a><a id="h"><a style="font-size: 14px"> 时 </a><a id="m"></a><a style="font-size: 14px"> 分 </a><a id="s"></a><a style="font-size: 14px"> 秒</a><br><a style="font-size: 14px">2020年8月25日&emsp;农历七月初七</a>
+      </div>
+    </div>
     <div class="box">
       <div class="img" style="height: 150px;">
         <img src="//sudsier.gitee.io/webimg/headimg.png" style="height: 150px;" alt="headimg.png">
@@ -45,7 +84,7 @@
       <div style="font-size: 30px"><a href="/vcip.html" style="color: #111">视频在版编目</a></div>
       <a style="color: #333">&emsp;&emsp;这里列出了Sudsier发布在bilibili上的所有视频的相关信息。</a>
     </div>
-    <hr>
+    <hr style="background-color:#F02000;height:2px;border:none;">
     <p style="text-align:center;font-size:20px;">本页面正在创建中</p>
   </div>
   <script src="/js/footer.js"></script>
