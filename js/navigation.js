@@ -22,6 +22,7 @@ document.write("      <a href=\"\/music\">音乐<\/a>");
 document.write("      <a href=\"#about\">关于<\/a>");
 document.write("    <\/div>");
 document.write("<\/div>");
+document.write("<div style=\"text-align: center;margin-top: 15px\"><img src=\"\/\/sudsier.gitee.io\/webimg\/20200825.png\" width=\"300px\"><\/div>");
 /* 将侧导航的宽度设置为250px，页面内容的左边距设置为250px，并在正文中添加黑色背景色 */
 function openNav() {
   document.getElementById("mySidenav").style.width = "250px";
