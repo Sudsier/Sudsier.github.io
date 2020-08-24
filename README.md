@@ -1,2 +1,2 @@
 # Sudsier.github.io
-这里是我网站源代码存储的地方
+这里是Sudsier网站源代码存储库
