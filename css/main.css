@@ -1,5 +1,5 @@
 body {
-  background-color: #C6F3FF;
+  background-color: #AAE8FF;
   margin: 0px;
   padding: 0px;
 }
@@ -51,8 +51,7 @@ select {
   top: 0;
   /* Stay at the top */
   left: 0;
-  background-color: #00A2FF;
-  /* 黑色 */
+  background-color: #63D5FF;
   overflow-x: hidden;
   /* 禁用水平滚动 */
   padding-top: 60px;
@@ -99,7 +98,7 @@ select {
 /*顶部导航条*/
 /* 向顶部导航添加黑色背景色 */
 .topnav {
-  background-color: #CFF2FF;
+  background-color: #CE0E28;
   overflow: hidden;
   margin: 0;
 }
