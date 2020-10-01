@@ -28,13 +28,6 @@
     }
   </style>
   <script>
-  document.onreadystatechange = function() {
-  if (document.readyState == "complete") {
-  document.body.style.display = "block";
-  } else {
-  document.body.style.display = "none";
-  };
-  };
     // 设定我们倒计时的日期
     var countDownDate = new Date("10 1, 2020 00:00:00").getTime();
     // 每1秒更新倒计时
@@ -57,8 +50,8 @@
       // 如果倒计时结束，提示文字
       if (distance <= 1) {
         clearInterval(x);
-        document.getElementById("qixi").innerHTML = "去寻找你的另一半吧！";
-        qixi.style.color="red";
+        document.getElementById("qixi").innerHTML = "节日快乐！";
+        qixi.style.color="#E52000";
       }
     }, 1000);
   </script>
@@ -67,16 +60,16 @@
   <script src="/js/navigation.js"></script>
   <div class="frame">
     <div style="color: #222;margin-bottom: 20px">
-      <div style="font-size: 40px ;color:#FF7F3A">中秋节</div>
-      <div style="font-size: 22px">
-        <a style="font-size: 16px">倒计时 </a><a id="d"></a><a style="font-size: 16px"> 天 </a><a id="h"><a style="font-size: 16px"> 时 </a><a id="m"></a><a style="font-size: 16px"> 分 </a><a id="s"></a><a style="font-size: 16px"> 秒</a><br><a style="font-size: 14px">2020年10月1日&emsp;&emsp;庚子(鼠)年八月十五</a>
+      <div style="font-size: 40px ;color:#E2331D">中秋&国庆节</div>
+      <div id="qixi" style="font-size: 22px">
+        <a style="font-size: 16px">倒计时 </a><a id="d"></a><a style="font-size: 16px"> 天 </a><a id="h"><a style="font-size: 16px"> 时 </a><a id="m"></a><a style="font-size: 16px"> 分 </a><a id="s"></a><a style="font-size: 16px"> 秒</a></div><div><a style="font-size: 14px">2020年10月1日&emsp;&emsp;庚子(鼠)年八月十五</a>
       </div>
     </div>
     <div class="box">
       <div class="img" style="height: 150px;">
         <img src="//sudsier.gitee.io/webimg/headimg.png" style="height: 150px;" alt="headimg.png">
       </div>
-      <div style="text-indent: 2em;">欢迎来到Sudsier（苏德西尔）的个人网站，本网站是一个综合性的网站，点击左上角的侧边栏导航条或顶部的导航条可快速到达您想看的内容哦~
+      <div style="text-indent: 2em;font-family:courier">欢迎来到Sudsier（苏德西尔）的个人网站，本网站是一个综合性的网站，点击左上角的侧边栏导航条或顶部的导航条可快速到达您想看的内容哦~
       </div>
     </div>
     <div class="sbox">
